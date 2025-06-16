@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>タスク管理モックアップ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>タスク管理ボード</h1>
+    <div id="board">
+        <div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>未着手</h2>
+            <div class="note" id="task1" draggable="true" ondragstart="drag(event)">タスク1</div>
+        </div>
+        <div class="column" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>作業中</h2>
+        </div>
+        <div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>完了</h2>
+        </div>
+        <div class="column" id="onhold" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>保留</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

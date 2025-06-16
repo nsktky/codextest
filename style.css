@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+#board {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.column {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 22%;
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 300px;
+}
+
+.column h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.note {
+    background-color: #fffb8f;
+    border: 1px solid #e2df82;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: move;
+}
